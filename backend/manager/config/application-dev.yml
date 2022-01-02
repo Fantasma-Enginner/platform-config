@@ -1,0 +1,22 @@
+# DEVELOP PROFILE CONFIG
+server:
+  ssl:
+    enabled: false
+    key-store-type: PKCS12
+    key-store: classpath:keystore/devel.pkc12
+    key-store-password: Thomas_21
+    key-alias: devel
+    client-auth: none
+    
+spring:
+  datasource:
+    url:  jdbc:postgresql://localhost:5432/db_tiquetes
+    username: postgres
+    password: admin
+    #url:  jdbc:oracle:thin:@localhost:1521:xe
+    #username: legacy
+    
+    #password: legacy
+  jpa:
+    show-sql: true
+

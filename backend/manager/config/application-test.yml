@@ -1,0 +1,19 @@
+# TESTING PROFILE CONFIG
+server:
+  port: 8082
+  ssl: 
+    enabled: true
+    key-store-type: PKCS12
+    key-store: classpath:keystore/develop.pkc12
+    key-store-password: Thomas_21
+    key-alias: develop
+
+spring:
+  datasource:
+    url: jdbc:h2:file:./data/vialplus
+    username: sa
+    password: sa
+  jpa:
+    show-sql: true
+    generate-ddl: true
+

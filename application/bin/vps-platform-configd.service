@@ -1,0 +1,10 @@
+[Unit]
+Description=Vial+ Platform Cloud Config Service.
+After=syslog.target
+
+[Service]
+ExecStart=/opt/vps/platform-config/bin/platform-config.jar
+SuccessExitStatus=TEMPFAIL 250 SIGKILL
+
+[Install]
+WantedBy=multi-user.target

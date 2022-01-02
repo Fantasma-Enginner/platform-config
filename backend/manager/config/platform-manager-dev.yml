@@ -1,0 +1,4 @@
+vialplus:
+  platform:
+    home:
+      host: http://localhost:4201

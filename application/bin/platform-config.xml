@@ -1,0 +1,11 @@
+<service>
+  <id>VPS-platform-config</id>
+  <name>VPS-platform-config</name>
+  <description>This service runs API Configuration for services of the Platform VIAL+.</description>
+  <env name="PLATFORM_CONFIG_HOME" value="%BASE%"/>
+  <executable>java</executable>
+  <arguments>-Xrs -Xmx256m -jar "%BASE%\platform-config.jar"</arguments>
+  <log mode="roll-by-size"></log>
+  <logpath>logs</logpath>
+  <onfailure action="restart" delay="10 sec" />
+</service>

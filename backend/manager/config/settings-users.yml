@@ -1,0 +1,7 @@
+vialplus:
+  settings:
+    users:
+      register: false
+      legacy: true
+      password:
+        validity: 90

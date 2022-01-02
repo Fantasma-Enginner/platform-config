@@ -1,0 +1,15 @@
+# PRODUCTION PROFILE CONFIG
+spring:
+  datasource:
+    url:  jdbc:[driver]://[host]:[port]/{schema}
+    username: [user]
+    password: [password]
+
+logging:
+  file:
+    path: logs
+
+vialplus:
+  platform:
+    home:
+      host: http{s}://[host]:[port]

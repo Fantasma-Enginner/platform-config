@@ -1,0 +1,32 @@
+# ALL PROFILES CONFIG
+spring:
+  jackson:
+    date-format: com.fasterxml.jackson.databind.util.StdDateFormat
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+  jpa:
+    open-in-view: false
+
+logging:
+  level:
+    io:
+      swagger:
+        models:
+          parameters:
+            AbstractSerializableParameter: error
+
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /api-docs
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+      register-with-eureka: true
+  instance:
+    non-secure-port-enabled: true
+    secure-port-enabled: false
+    prefer-ip-address: true
